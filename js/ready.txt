@@ -1,0 +1,9 @@
+Провірка на число:
+function isNumeric(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+Випадкове число
+0 - max
+Math.random() * max
+min - max
+min + Math.random() * (max - min)

@@ -1,0 +1,64 @@
+Number
+Якщо математична операція не може бути виконана то повертає NaN
+NaN !== NaN; // true
+Перевірка на NaN:
+var n = 0/0; // NaN;
+n !== n; // true
+
+NaN, Infinity і -Infinity - також числа
+
+isFinite(n) - перетворює аргумент до числа і повертає true,
+              якщо це не NaN/Infinity/-Infinity;
+parseInt('12px'); // 12
+parseInt('FF', 16); // 255
+parseInt('a123') ); // NaN
+parseFloat('12.3.4'); // 12.3
+var n = 255;
+n.toString(16); // ff
+
+Math.floor(3.7);  // 3 nyz
+Math.ceil(3.2);   // 4 verh
+Math.round(3.5);  // 4 norm
+
+String
+"str".charAt(0); // s
+"str"[0]; // s
+"".charAt(0) ); // ""
+""[0]; // undefined
+"str".toUpperCase(); // "STR"
+"STR".toLowerCase(); // "str"
+"str".indexOf("s"); // 1
+"str".indexOf("c"); // -1
+"str".substring(0,1)); // "s"
+"stringlong".substr(2,5); // "ringl"
+"str".slice(0,1)); "s"
+
+null - невідоме і не оприділене, краще присвоювати замість undefined
+
+Object
+Перевірка на властивість:
+var obj = {name: "v"};
+'name' in obj; // true
+
+Видалення властивості з обєкту:
+user = {name: "Sergey", surName: "Petrov"}
+delete user.name; // user {surName: "Petrov"}
+
+Перебір масиву for in:
+for (key in obj) {
+  /* ... делать что-то с obj[key] ... */
+}
+
+Масиви:
+Створення
+var arr = ["Яблоко", "Груша", "и т.п."];
+var arr = new Array("Яблоко", "Груша", "и т.п."); => ["Яблоко", "Груша", "и т.п."]
+arr = new Array(2); => [undefined, undefined]
+
+.pop() - delete last
+.push() - push last
+.shuft() - delete first
+.unshift() - delete first
+arr.length = 0; -простий сросіб очистити масив, або зменшити замість ноль - потрібне число;
+
+arr.indexOf("item"); => повертає номер елементу масиву або -1
